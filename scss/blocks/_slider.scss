@@ -1,0 +1,53 @@
+.slider {
+    position: relative;
+    width: 400px;
+    height: 190px;
+    padding: 0 40px 24px;
+    margin: 100px 60px;
+    span {
+        width: 28px;
+        height: 40px;
+        text-align: left;
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 900;
+        letter-spacing: 0px;
+        color: #FF00CE;
+    }
+    &__left {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        font-size: 36px;
+        transform: scaleX(.65);
+        color: #FF00CE;
+        cursor: pointer;
+        
+    }
+    &__right {
+        display: none;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        font-size: 36px;
+        transform: scaleX(.65);
+        color: #FF00CE;
+        cursor: pointer;
+    }
+    &__item {
+        display: none;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #fff;
+        &_price {
+            text-align: right;
+            color: #639EFA;
+        }
+    }   
+}
+.active {
+    display: block;
+}

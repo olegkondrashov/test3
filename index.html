@@ -5,10 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap-reboot.min.css" integrity="sha512-ioOlrrQQ3fZN/A7N2rZVm6JXp/Lg7xtda9OaRKornjBcuTW/UqIhTlPyngcGQGrQTOhJgmSltKM4v3Ne03WPug==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
-    <div class="triangle">
-    </div>
+    <header class="header">
+        <div class="logo">
+            <div class="logo__img">
+                <div class="logo__img_top">
+                    <div class="logo__img_top-1"></div>
+                    <div class="logo__img_top-2"></div>
+                </div>
+                <div class="logo__img_left">
+                    <div class="logo__img_left-1"></div>
+                    <div class="logo__img_left-2"></div>
+                </div>
+                <div class="logo__img_right">
+                    <div class="logo__img_right-1"></div>
+                    <div class="logo__img_right-2"></div>
+                </div>
+            </div>
+            <div class="logo__name">penrose</div>
+        </div>
+        <nav class="nav">
+            <a class="nav__link" href="#">HOME</a>
+            <a class="nav__link" href="#">NEW COLLECTIONS</a>
+            <div class="nav__link dropdown">STORE
+                <i class="fas fa-chevron-down"></i>
+                <div class="dropdown__menu">
+                    <a class="dropdown__menu-item" href="#">Women</a>
+                    <a class="dropdown__menu-item" href="#">Men</a>
+                    <a class="dropdown__menu-item" href="#">Kids</a>
+                </div>
+            </div>
+            <a class="nav__link" href="#">CONTACTS</a>
+        </nav>
+    </header>
+    
+    <section class="main">
+        <div class="main__content">
+            <div class="main__content_left">
+                <img src="img/Title.png" alt="title ">
+                <a class="main__content_left-video" href="https://youtu.be/dQw4w9WgXcQ" target="_blank">
+                    <img class="preview" src="//img.youtube.com/vi/dQw4w9WgXcQ/default.jpg" alt="video preview">
+                    <img class="play" src="img/play.png" alt="play button">
+                </a>
+            </div>
+            <div class="main__content_right">
+                <div class="slider">
+                    <span>“</span>
+                    <div class="slider__item active">
+                        <div class="slider__item_name">Blandit et augue nulla suscipit ut ut quis ad feugiat ut luptatum, consequat, lobortis, aliquip dolore, iriure veniam te dolor aliquip.</div>
+                    <div class="slider__item_price">— Emerson Hawkins</div>
+                    </div>
+                    <div class="slider__item ">
+                        <div class="slider__item_name">Hendrerit aliquam odio accumsan ea commodo augue dolore zzril commodo facilisis in tation nulla iriure dolore feugait facilisis praesent.</div>
+                    <div class="slider__item_price">— Terry Matthews</div>
+                    </div>
+                    <div class="slider__item ">
+                        <div class="slider__item_name">Consequat aliquip lobortis consectetuer adipiscing volutpat ad autem veniam hendrerit consequat te quis suscipit dolor consequat in. Duis ex, diam hendrerit.</div>
+                    <div class="slider__item_price">— Reggie Henry</div>
+                    </div>
+                    <div class="slider__left">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="slider__right active">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="triangle">
+        </div>
+    </section>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
