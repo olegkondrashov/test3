@@ -35,7 +35,11 @@
         color: #FF00CE;
         cursor: pointer;
     }
+    &__items {
+        height: 100%;
+    }
     &__item {
+        position: relative;
         display: none;
         font-size: 18px;
         line-height: 23px;
@@ -46,8 +50,27 @@
             text-align: right;
             color: #639EFA;
         }
-    }   
+    }
+    &__dots {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        &-item {
+            height: 8px;
+            width: 8px;
+            margin: 8px;
+            background: grey;
+            border-radius: 50%;
+        }
+    }
 }
 .active {
     display: block;
+}
+.current {
+    background: #fff;
 }

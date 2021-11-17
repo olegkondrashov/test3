@@ -1,10 +1,10 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     background: #292929;
-    overflow: hidden;
 }
 
 
 @import 'blocks/_header.scss';
 @import 'blocks/_main.scss';
 @import 'blocks/slider';
+@import 'blocks/media';

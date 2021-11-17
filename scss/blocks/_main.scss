@@ -1,11 +1,18 @@
 .main {
     height: 100vh;
-    background: url('../img/Model@2x.png') no-repeat bottom/contain;
+    background: url('../img/Model@2x.png') 42% 0% no-repeat padding-box,
+     url('../img/Triangle.png') 50% 46% no-repeat padding-box,
+     url('../img/Triangle Glow.png') 50% 46% no-repeat padding-box;
     &__content {
         display: flex;
         justify-content: space-between;
         &_left {
+            width: 45%;
             padding: 100px 0 0 100px;
+            &-img {
+                width: 100%;
+                max-width: 283px;
+            }
             &-video {
                 position: relative;
                 display: block;
@@ -13,44 +20,46 @@
                 height: 90px;
                 margin: 48px 0 0 30px;
                 cursor: pointer;
-                z-index: 1000000;
+                z-index: 100;
             }
         }
     }
 }
-.triangle {
-    display: block;
-    width: 680px;
-    height: 689px;
-    position: relative;
-    bottom: 50%;
-    left: 30%;
-    z-index: -2;
-    &::after {
-        content: "";
-        background: transparent url('../img/Triangle.png') center / contain no-repeat;
-        width: 100%;
-        opacity: 1;
-        top: 10px;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: 1;
-    }
-    &::before {
-        content: "";
-        background: transparent url('../img/Triangle Glow.png') center / cover no-repeat;
-        width: 100%;
-        opacity: .8;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1; 
-    }
-}
+// .triangle {
+//     display: block;
+//     width: 680px;
+//     height: 689px;
+//     position: relative;
+//     bottom: 50%;
+//     left: 30%;
+//     z-index: -2;
+//     &::after {
+//         content: "";
+//         background: url('../img/Triangle.png') center / contain no-repeat;
+//         width: 100%;
+//         opacity: 1;
+//         top: 10px;
+//         left: 0;
+//         bottom: 0;
+//         right: 0;
+//         position: absolute;
+        
+//         z-index: 1;
+//     }
+//     &::before {
+//         content: "";
+//         background: url('../img/Triangle Glow.png') center / cover no-repeat;
+//         width: 100%;
+//         opacity: .8;
+//         top: 0;
+//         left: 0;
+//         bottom: 0;
+//         right: 0;
+//         position: absolute;
+//         filter: blur(8px);
+//         z-index: -1; 
+//     }
+// }
 .preview {
     width: 100%;
     object-fit: cover;
