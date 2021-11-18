@@ -25,41 +25,6 @@
         }
     }
 }
-// .triangle {
-//     display: block;
-//     width: 680px;
-//     height: 689px;
-//     position: relative;
-//     bottom: 50%;
-//     left: 30%;
-//     z-index: -2;
-//     &::after {
-//         content: "";
-//         background: url('../img/Triangle.png') center / contain no-repeat;
-//         width: 100%;
-//         opacity: 1;
-//         top: 10px;
-//         left: 0;
-//         bottom: 0;
-//         right: 0;
-//         position: absolute;
-        
-//         z-index: 1;
-//     }
-//     &::before {
-//         content: "";
-//         background: url('../img/Triangle Glow.png') center / cover no-repeat;
-//         width: 100%;
-//         opacity: .8;
-//         top: 0;
-//         left: 0;
-//         bottom: 0;
-//         right: 0;
-//         position: absolute;
-//         filter: blur(8px);
-//         z-index: -1; 
-//     }
-// }
 .preview {
     width: 100%;
     object-fit: cover;
